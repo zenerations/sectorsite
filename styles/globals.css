@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 /* NEXTJS DEFAULTS */
 html,
 body {
@@ -10,9 +12,8 @@ body {
 }
 
 /* FONTS */
-@import url('https://rsms.me/inter/inter.css');
-
 :root { font-family: 'Inter', sans-serif; }
+
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
@@ -21,9 +22,8 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-.home-background {
-  @apply bg-gradient-to-tr;
-  @apply from-brand-8 via-brand-7 to-brand-5
+.home-bg {
+  background-image: url(../public/svgs/low-poly-grid-haikei.svg);
 }
 
 /* GLOBAL CLASSES */
