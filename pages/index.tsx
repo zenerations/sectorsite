@@ -1,11 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 import BG from 'layouts/bg'
 import Meta from 'components/meta'
 import PrimaryCard from 'components/primary-card'
 
 const Home = () => {
+
+  useEffect(() => {
+    setInterval(() => {
+      window.location.assign("https://zenerations.org");
+    }, 5000);
+  });
+  
   return (
     <div>
       <Meta />
